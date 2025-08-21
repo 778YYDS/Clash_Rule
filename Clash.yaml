@@ -9,5 +9,5 @@ proxies:
     type: reject
 
 rules:
-  - RULE-SET,https://raw.githubusercontent.com/778YYDS/DFM-yaml-/main/DFM,reject
+  - RULE-SET,https://raw.githubusercontent.com/778YYDS/DFM-yaml-/refs/heads/main/DFM.yaml,reject
   - MATCH,DIRECT
