@@ -1,13 +1,99 @@
-# 文件名：reject-rules.yaml
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+
+proxies:
+  - name: "RejectNode"
+    type: reject
+
 rules:
-- DOMAIN-SUFFIX,089539.com,REJECT
-- DOMAIN-SUFFIX,117.wefun.vip,REJECT
-- DOMAIN-SUFFIX,123720.cc,REJECT
-- DOMAIN-SUFFIX,127373.com,REJECT
-- DOMAIN-SUFFIX,1328946c4879e.cdn.sohucs.com,REJECT
-- DOMAIN-SUFFIX,220.img.pp.sohu.com.cn,REJECT
-...
-- IP-CIDR,1.13.31.131/32,REJECT
-- IP-CIDR,1.13.31.223/32,REJECT
-- IP-CIDR,112.64.237.108/32,REJECT
-...
+  # 域名阻断规则
+  - DOMAIN-SUFFIX,089539.com,RejectNode
+  - DOMAIN-SUFFIX,117.wefun.vip,RejectNode
+  - DOMAIN-SUFFIX,123720.cc,RejectNode
+  - DOMAIN-SUFFIX,127373.com,RejectNode
+  - DOMAIN-SUFFIX,1328946c4879e.cdn.sohucs.com,RejectNode
+  - DOMAIN-SUFFIX,220.img.pp.sohu.com.cn,RejectNode
+  - DOMAIN-SUFFIX,227226.com,RejectNode
+  - DOMAIN-SUFFIX,356161.com,RejectNode
+  - DOMAIN-SUFFIX,3833.com,RejectNode
+  - DOMAIN-SUFFIX,3atv.cc,RejectNode
+  - DOMAIN-SUFFIX,437.com,RejectNode
+  - DOMAIN-SUFFIX,4924.com,RejectNode
+  - DOMAIN-SUFFIX,520025.com,RejectNode
+  - DOMAIN-SUFFIX,520201.com,RejectNode
+  - DOMAIN-SUFFIX,525tu.com,RejectNode
+  - DOMAIN-SUFFIX,52bft.91jm.com,RejectNode
+  - DOMAIN-SUFFIX,59jjj.com,RejectNode
+  - DOMAIN-SUFFIX,602292.com,RejectNode
+  - DOMAIN-SUFFIX,619322.com,RejectNode
+  - DOMAIN-SUFFIX,666666.com,RejectNode
+  - DOMAIN-SUFFIX,69666.com,RejectNode
+  - DOMAIN-SUFFIX,72886c.com,RejectNode
+  - DOMAIN-SUFFIX,769pp.com,RejectNode
+  - DOMAIN-SUFFIX,77950.com,RejectNode
+  - DOMAIN-SUFFIX,77thz.com,RejectNode
+  - DOMAIN-SUFFIX,7979bet.net,RejectNode
+  - DOMAIN-SUFFIX,7ivv.com,RejectNode
+  - DOMAIN-SUFFIX,81608a.com,RejectNode
+  - DOMAIN-SUFFIX,82xxd.com,RejectNode
+  - DOMAIN-SUFFIX,91jm.com,RejectNode
+  - DOMAIN-SUFFIX,928.aa9try.com,RejectNode
+  - DOMAIN-SUFFIX,98k.com,RejectNode
+  - DOMAIN-SUFFIX,9962v.com,RejectNode
+  - DOMAIN-SUFFIX,99thz.com,RejectNode
+
+  # IP阻断规则
+  - IP-CIDR,1.13.31.131/32,RejectNode
+  - IP-CIDR,1.13.31.223/32,RejectNode
+  - IP-CIDR,112.64.237.108/32,RejectNode
+  - IP-CIDR,112.80.130.117/32,RejectNode
+  - IP-CIDR,112.90.80.67/32,RejectNode
+  - IP-CIDR,113.56.189.162/32,RejectNode
+  - IP-CIDR,114.222.112.57/32,RejectNode
+  - IP-CIDR,115.56.90.180/32,RejectNode
+  - IP-CIDR,116.128.169.147/32,RejectNode
+  - IP-CIDR,116.128.169.179/32,RejectNode
+  - IP-CIDR,116.128.169.246/32,RejectNode
+  - IP-CIDR,112.64.235.35/32,RejectNode
+  - IP-CIDR,182.254.116.117/32,RejectNode
+  - IP-CIDR,182.50.13.120/32,RejectNode
+  - IP-CIDR,58.19.160.41/32,RejectNode
+  - IP-CIDR,58.19.160.211/32,RejectNode
+  - IP-CIDR,127.0.0.1/32,RejectNode
+  - IP-CIDR,140.207.124.31/32,RejectNode
+  - IP-CIDR,220.196.155.18/32,RejectNode
+  - IP-CIDR,116.130.224.159/32,RejectNode
+  - IP-CIDR,153.3.50.229/32,RejectNode
+  - IP-CIDR,192.168.1.102/32,RejectNode
+  - IP-CIDR,182.50.10.81/32,RejectNode
+  - IP-CIDR,116.130.220.64/32,RejectNode
+  - IP-CIDR,116.130.224.226/32,RejectNode
+  - IP-CIDR,116.153.61.189/32,RejectNode
+  - IP-CIDR,122.189.225.171/32,RejectNode
+  - IP-CIDR,140.207.118.222/32,RejectNode
+  - IP-CIDR,140.207.124.33/32,RejectNode
+  - IP-CIDR,140.207.57.189/32,RejectNode
+  - IP-CIDR,140.207.57.235/32,RejectNode
+  - IP-CIDR,153.3.220.80/32,RejectNode
+  - IP-CIDR,153.3.47.29/32,RejectNode
+  - IP-CIDR,153.3.47.96/32,RejectNode
+  - IP-CIDR,153.37.103.158/32,RejectNode
+  - IP-CIDR,157.148.16.227/32,RejectNode
+  - IP-CIDR,218.29.205.181/32,RejectNode
+  - IP-CIDR,221.14.109.62/32,RejectNode
+  - IP-CIDR,221.204.18.139/32,RejectNode
+  - IP-CIDR,223.167.82.243/32,RejectNode
+  - IP-CIDR,36.155.240.19/32,RejectNode
+  - IP-CIDR,36.248.45.21/32,RejectNode
+  - IP-CIDR,42.187.253.230/32,RejectNode
+  - IP-CIDR,42.231.143.20/32,RejectNode
+  - IP-CIDR,58.254.165.84/32,RejectNode
+  - IP-CIDR,59.83.209.118/32,RejectNode
+  - IP-CIDR,60.222.221.56/32,RejectNode
+  - IP-CIDR,60.28.215.27/32,RejectNode
+  - IP-CIDR,60.29.237.165/32,RejectNode
+
+  - MATCH,DIRECT
