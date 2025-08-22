@@ -506,4 +506,4 @@ rules:
  - IP-CIDR,60.222.221.56/32,RejectNode
  - IP-CIDR,60.28.215.27/32,RejectNode
  - IP-CIDR,60.29.237.165/32,RejectNode
-  - MATCH,DIRECT
+ - MATCH,DIRECT
